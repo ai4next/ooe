@@ -1,0 +1,511 @@
+# ja catalog — key: English source, value: translation
+"No GPS. Does your cart know where it is?"	「GPS はない。きみの台車は自分の居場所がわかる?」
+0-9 a number	0-9 数値
+A COMMON MYTH	よくある誤解
+A balancing cart that carries the medicine tray without spilling.	薬のトレイをこぼさず運ぶ、バランス台車。
+A big position error asks for a big lean. Limit how much of the distance the controller sees at once, and POLE walks instead of lunging.	位置の誤差が大きいほど、求める傾きも大きくなります。コントローラーが一度に見る距離を制限すれば、POLE は飛びかからずに歩いて向かいます。
+A clean fall rate.	きれいな落下速度。
+A controller is only as good as the worst robot it has to run on.	コントローラーの良し悪しは、動かすロボットの中で最も厄介な一台で決まります。
+A controller that is good at the top is not good everywhere. Linear feedback only works close to where it was designed.	頂上でうまくいくコントローラーが、どこでもうまくいくとは限りません。線形フィードバックは設計した点の近くでしか効きません。
+A cyclist steers into the fall, a rocket swivels its engine under its weight, and a waiter walks under a wobbling tray.	自転車乗りは倒れる方へハンドルを切り、ロケットはエンジンを重心の下へ振り、ウェイターは揺れるトレイの下へ歩きます。
+A delay turns a quick correction into a late one. With a huge gain, each late push overshoots, and the next one has more to undo: the swings grow until the pole falls.	遅れは素早い修正を遅すぎる修正に変えます。ゲインが大きすぎると、遅れた押しはいつも行き過ぎ、次はもっと多くを取り戻さなければなりません。揺れは大きくなり続け、やがて棒は倒れます。
+A derivative divides each tiny jump by a tiny time step, so 1 cm of noise becomes metres per second. The motor then shakes the robot apart.	微分は小さな変化を小さな時間刻みで割るので、1 cm のノイズが秒速数メートルに化けます。そしてモーターがロボットを揺さぶり壊してしまいます。
+A drone nests its loops: position sets velocity, velocity sets tilt, tilt sets the motor speeds. Each inner loop is faster than the one around it.	ドローンはループを入れ子にしています。位置が速度を決め、速度が傾きを決め、傾きがモーターの回転数を決めます。内側のループほど速く動きます。
+A gait is a rhythm plus a rule for which foot carries the weight.	歩容とは、リズムと「どちらの足で体重を支えるか」というルールの組み合わせです。
+A learner optimises exactly what you reward, not what you meant.	学習器は、あなたが意図したものではなく、報酬を与えたものをそのまま最適化します。
+A little before the flag.	旗の少し手前。
+A little past the flag.	旗を少し越えたところ。
+A mail rover that finds its own way through the storm.	嵐の中を自分で道を見つける郵便ローバー。
+A moving cart has momentum and the motor takes time to spin down, so it coasts past. Real controllers start braking early.	動いている台車には慣性があり、モーターが止まるまでにも時間がかかるので、行き過ぎてしまいます。実際のコントローラーは早めにブレーキをかけます。
+A new best for this robot.	このロボットの新記録。
+A perfect simulation score proves little; robust beats optimal once hardware is involved.	シミュレーションで満点でも、ほとんど何の証明にもなりません。実機が絡んだら、最適よりロバストが勝ちます。
+A pure spring controller holds a heavy load. Where does it settle?	ばねだけのコントローラーが重い荷物を支えています。最終的にどこで止まるでしょう？
+A push in step with the swing adds a little energy every time; a steady push just moves the cart off the track. Once the swing carries the pole near the top, a balancer can catch it.	揺れに合わせて押せば、毎回少しずつエネルギーが増えます。同じ向きに押し続けても台車がレールから外れるだけです。揺れが棒を頂上近くまで運んだら、バランサーで受け止められます。
+A register keeps a value for later rows. An output drives the robot.	レジスタは値を保持して後の行に渡します。出力はロボットを直接動かします。
+A robot head is being rocked around. It has two ways to tell which way is down.\n`accel` gives the tilt directly but shakes with every vibration. `gyro` gives the turn rate smoothly but has a small bias.\nWrite `est`, your best guess of the tilt, and keep it close to the truth.	ロボットの頭部が前後に揺さぶられています。下がどちらかを知る方法は 2 つあります。\n`accel` は傾きを直接教えてくれますが、振動のたびにぶれます。`gyro` は回転の速さを滑らかに教えてくれますが、わずかなバイアスがあります。\n傾きの最善の推定値 `est` を書き、真値にぴったり追従させてください。
+A robot is a loop. Fifty times a second it reads its sensors, runs a tiny program, and sets its motors. Nothing more. Everything clever comes from what that program does with what it reads.	ロボットとはループです。1 秒に 50 回、センサーを読み、小さなプログラムを動かし、モーターを設定する。それだけです。賢さはすべて、そのプログラムが読み取ったものをどう扱うかから生まれます。
+A robot that wobbles along a line is not broken; it is reacting too late or too hard.	ラインに沿ってふらつくロボットは壊れているわけではありません。反応が遅すぎるか、強すぎるだけです。
+A scale error never averages out: every metre adds 10 cm more. Dead reckoning always drifts; only an outside reference can reset it.	スケール誤差は決して打ち消し合いません。1 m 進むごとに 10 cm ずつ増えていきます。デッドレコニングは必ずドリフトし、外部の基準だけがそれをリセットできます。
+A sine of time makes a rhythm. Give the two hips opposite signs so one pushes while the other returns.	時間のサイン（正弦）がリズムを生みます。左右の股関節に逆の符号を与えれば、片方が蹴り出す間にもう片方が戻ります。
+A spring only pushes when stretched. To hold the weight up it must stay stretched, so there is always some error left: steady-state error.	ばねは伸びているときしか力を出しません。重さを支え続けるには伸びたままでいる必要があるので、必ず誤差が少し残ります。これが定常偏差です。
+A spring pulls the sled towards the mark with nothing else. What does it do?	ばね 1 本だけで、ソリをマークへ引き寄せます。ほかには何もありません。どうなるでしょう？
+A straight arm is 2 m long, so it overshoots along the same line. Reaching closer means bending the elbow, which swings the tip off the line, so the shoulder must compensate.	まっすぐ伸ばした腕は 2 m あるので、同じ直線上で行き過ぎてしまいます。近くに届かせるには肘を曲げる必要があり、そうすると指先が直線から外れるので、肩で補正しなければなりません。
+A walker that crosses the rocks at low tide to bring in the nets.	干潮の岩場を歩いて網を引き上げる歩行ロボ。
+A workshop full of robots that have never moved. Teach them.	一度も動いたことのないロボットでいっぱいの工房。動き方を教えてあげましょう。
+ABS d, a — drop the sign.	ABS d, a — 符号を取り除く。
+ACOS d, a — the angle whose cosine is a.	ACOS d, a — コサインが a になる角度。
+ADD A BLOCK	ブロックを追加
+ARM has two 1 m links: a shoulder and an elbow. You command joint angles; the servos do the rest.\nThe target is at (`tx`, `ty`) from the shoulder. Put the fingertip on it.\nYou think in places, the motors think in angles: translate.	ARM には 1 m のリンクが 2 本あります。肩と肘です。あなたが関節角度を指示すれば、あとはサーボが動かします。\nターゲットは肩から見て (`tx`, `ty`) の位置にあります。指先をそこに当ててください。\nあなたは位置で考え、モーターは角度で考えます。その間を翻訳しましょう。
+ATAN2 d, y, x — the angle pointing at (x, y).	ATAN2 d, y, x — (x, y) を指す角度。
+About 1 m, and growing.	約 1 m。しかもまだ増え続ける。
+About 10 cm.	約 10 cm。
+Above the target.	ターゲットより上。
+Acquisitions, Helix	Helix 買収担当
+Add `gyro` so you react to the fall before the lean grows. Small terms on `pos` and `vel` stop the cart wandering off the track.	`gyro` を加えて、傾きが大きくなる前に倒れ始めに反応しましょう。`pos` と `vel` にも小さな項を足せば、台車がレールから外れていくのを防げます。
+Add a term that pushes against `vel`. Tune it until the sled glides in without crossing the mark.	`vel` に逆らって押す項を加えましょう。ソリがマークを越えずに滑り込むまで調整してください。
+Ade	アデ
+Ake	アカ
+Always the same way, as hard as it can.	いつも同じ向きに、全力で。
+An arm that can write on the blackboard.	黒板に字が書けるアーム。
+An integral adds up the error over time, so it keeps growing until the error is gone. `PID` has one built in.	積分は誤差を時間とともに積み上げるので、誤差がなくなるまで増え続けます。`PID` には積分が組み込まれています。
+An outer loop sets the goal of an inner loop: position asks for a lean, and the lean loop moves the cart.	外側のループが内側のループの目標を決めます。位置が傾きを求め、傾きのループが台車を動かします。
+Animals generate walking rhythms in the spinal cord; legged robots copy the idea with oscillators called CPGs.	動物は歩行のリズムを脊髄で生み出しています。脚ロボットは CPG と呼ばれる振動子でその仕組みをまねています。
+Architect	アーキテクト
+Back to the bench	作業台に戻る
+Back to the start	最初に戻る
+Balance	バランス
+Balancing is not about staying still: the cart is always moving a little to stay under the pole.	バランスとはじっとしていることではありません。台車は棒の真下にいるために、いつも少しずつ動いています。
+Below the target, by an amount that grows with the weight.	ターゲットより下。重いほど大きくずれる。
+Big jumps in `target` make POLE lunge. `CLAMP` the position error to about 0.6 m, and stiffen the gains for the heavy, late robots.	`target` が大きく跳ぶと、POLE は飛びかかります。位置の誤差を `CLAMP` で 0.6 m ほどに制限し、重くて遅いロボットのためにゲインを硬めにしましょう。
+Both legs swing forward and back together, feet always on the ground. How far does it get?	両脚が一緒に前後に振れ、足はずっと地面についたまま。どこまで進むでしょう？
+Bound to Fall	必ず倒れる
+Brief	課題
+Build and test every case. Enter / F5	ビルドして全ケースをテスト。Enter / F5
+By the time it reaches the mark the spring has given it speed, and nothing takes that speed away. Ice has almost no friction to help.	マークに着くころには、ばねがソリに速度を与えてしまっていて、その速度を奪うものは何もありません。氷の上では摩擦もほとんど助けてくれません。
+CHANGE THE BLOCK	ブロックを変更
+CLAMP d, x, lim — keep x between −lim and +lim.	CLAMP d, x, lim — x を −lim から +lim の範囲に収める。
+COMING SOON	準備中
+COMMISSION	依頼
+COS d, a — cosine (radians).	COS d, a — コサイン（ラジアン）。
+Car suspensions, door closers and hard-disk heads are all tuned for just enough damping.	車のサスペンション、ドアクローザー、ハードディスクのヘッドは、どれもちょうどよい減衰に調整されています。
+Cascade control	カスケード制御
+Chase the stars you missed.	取り逃した星を狙おう。
+Chasing the fall	倒れる方へ追う
+Chasing the goal harder does not get there sooner: for a balancing robot, a hard chase is exactly what tips it over.	目標を強く追っても早く着くわけではありません。バランスロボットにとっては、強く追うことこそが転倒の原因です。
+Chasing the lean alone works but wastes effort: the cart always arrives late. Add some `gyro` to react to the fall before the lean builds up.	傾きだけを追っても立ちますが、力の無駄です。台車がいつも一歩遅れて着きます。`gyro` を少し足して、傾きが大きくなる前に倒れに反応しましょう。
+Clinic doctor	診療所の医師
+Closing the loop	ループを閉じる
+Commission	依頼
+Commit to an answer. You will see why when you run it.	まずは答えを決めましょう。実行すれば理由がわかります。
+Compare the four robots on the scope. The motor command is jumping around: where does the noise come from?	スコープで 4 台のロボットを比べてみましょう。モーター指令が暴れています。ノイズはどこから来ているのでしょう？
+Continue	続きから
+Controlling only the angle feels like the whole job. The pole stays up, and the robot walks off the edge.	角度だけを制御すれば十分に思えます。棒は立っていても、ロボットは端から落ちていきます。
+Correct!	正解！
+Count your steps to stay smooth, and use landmarks to stay right.	歩数を数えて滑らかに、ランドマークを見て正確に。
+DERIV d, x — how fast x is changing, per second. Remembers.	DERIV d, x — x が 1 秒あたりどれだけ変化しているか。記憶あり。
+DIV d, a, b — d = a ÷ b (0 when b is 0).	DIV d, a, b — d = a ÷ b（b が 0 なら 0）。
+Damping	減衰
+Delay and noise put a ceiling on how hard a loop can push; past it, more gain means shaking, not precision.	遅れとノイズが、ループが押せる強さに上限を作ります。それを超えると、ゲインを上げても精度ではなく震えが増えるだけです。
+Delete	削除
+Delivery robots in hospitals and hotels balance, follow a route and absorb bumps from people, all from feedback loops like this one.	病院やホテルの配送ロボットは、バランスを取り、ルートをたどり、人とぶつかっても耐えます。どれもこのようなフィードバックループによるものです。
+Differential drive	差動駆動
+Does not build.	ビルドできません。
+Done	完了
+Down — setting it back up…	転倒 — 起こし直しています…
+Dr. Lina	リナ先生
+Dr. Lina asked what happens when POLE falls over in the corridor. It lies there. So do I, if I fall: that is why I only have one arm.\nThis time POLE starts hanging straight down, free to swing all the way round. Swing it up and keep it balanced for the last 5 seconds.\nA balancer only works near the top. Pump energy into the swing first, like a child on a swing, then catch it. `angle` reads ±3.14 hanging down; `COS` is unlocked.	リナ先生に聞かれました。POLE が廊下で倒れたらどうなるの、と。倒れたままです。私も倒れたらそうなります。だから腕が一本しかないんです。\n今回の POLE は真下にぶら下がった状態から始まり、一回転まで自由に回れます。振り上げて、最後の 5 秒間バランスを保ってください。\nバランサーが効くのは頂上の近くだけです。まずブランコをこぐように揺れにエネルギーを注ぎ、それから受け止めましょう。真下では `angle` は ±3.14 です。`COS` が解放されました。
+Dr. Lina found POLE too slow, so she turned the lean gain up to 200 "to make it react faster". Now it shivers, worse and worse, and falls.\nOn the ward the sensors are noisy and every reading is one tick old.\nFind on the scope the first swing that is bigger than the one before it: from there the shivering feeds itself. Then fix it so POLE stands for 10 seconds.	リナ先生は POLE が遅いと感じて、「もっと速く反応するように」と傾きのゲインを 200 に上げました。今では POLE はどんどんひどく震え、最後には倒れます。\n病棟ではセンサーにノイズがあり、どの読み値も 1 tick 古いものです。\nスコープで、前の揺れより大きくなった最初の揺れを見つけてください。そこから震えは自分で育っていきます。それから直して、POLE を 10 秒間立たせてください。
+Dr. Lina wants a cart that carries the medicine tray down the clinic corridor without spilling. I said yes before I thought about it.\nThis is POLE: a cart with a pole standing on top. Nothing so far was like it. Leave it alone and it does not settle: it falls.\nKeep the pole up for 5 seconds. `angle` is the lean, `gyro` how fast it is falling.	リナ先生は、薬のトレイをこぼさず診療所の廊下を運べる台車がほしいそうです。よく考えずに引き受けてしまいました。\nこれが POLE、上に棒が立った台車です。これまでのどれとも違います。放っておいても落ち着きません。倒れます。\n棒を 5 秒間立たせてください。`angle` は傾き、`gyro` は倒れる速さです。
+Dr. Lina's job: carry the medicine tray down the corridor, stop at each bed, and do not spill a drop. She does not like mistakes.\n`target` moves to the next bed every 3.5 s. Patients, visitors and a trolley will bump POLE six times on the way. Four robots, all a little different: noisy, late, light or heavy.\nWhen time runs out, POLE must be upright and parked at the last bed.	リナ先生の依頼です。薬のトレイを持って廊下を進み、ベッドごとに止まり、一滴もこぼさないこと。先生はミスが嫌いです。\n`target` は 3.5 s ごとに次のベッドへ移ります。途中で患者さん、見舞い客、ワゴンが POLE に 6 回ぶつかります。ロボットは 4 台、それぞれ少しずつ違います。ノイズが多い、遅い、軽い、重い。\n時間切れのとき、POLE はまっすぐ立って最後のベッドの横に止まっていなければなりません。
+Drag the scope cursor to:	オシロスコープのカーソルをここへ：
+Drive while the distance is positive, stop otherwise. Watch the scope: the cart keeps rolling after the motor stops.	距離が正のあいだは進み、そうでなければ止めます。スコープを見てください。モーターが止まったあとも台車は転がり続けています。
+Drives away from the dock.	ドックから遠ざかっていく。
+EDIT	編集
+ELSE	でなければ
+EPISODES	エピソード
+ERROR	誤差
+ERROR OVER TIME · EVERY TEST	時間ごとの誤差 · 全テスト
+ERROR · LAST 4 SECONDS	誤差 · 直近 4 秒
+Each forward swing undoes the backward one. Walking needs asymmetry: push while planted, lift while returning.	前への振りが、後ろへの振りを打ち消してしまいます。歩くには非対称性が必要です。接地中に蹴り、戻すときは足を上げましょう。
+Each sensor is bad in a different way: one is noisy now, the other is wrong in the long run.	どちらのセンサーも欠点の種類が違います。片方は目先でノイズが多く、もう片方は長い目で見ると狂っていきます。
+Empty. Pick a block on the right to start.	空っぽです。右のブロックを選んで始めましょう。
+Engineer	エンジニア
+Engineers check how much the gain could grow, or the delay lengthen, before a loop starts to ring, and keep that margin to spare.	エンジニアは、ループが振動し始めるまでにゲインをあとどれだけ上げられるか、遅れがあとどれだけ伸びてもよいかを調べ、その余裕を残しておきます。
+Every phone, drone and VR headset fuses a gyro and an accelerometer like this, usually with a Kalman filter.	スマートフォンもドローンも VR ヘッドセットも、こうしてジャイロと加速度センサーを融合しています。たいていはカルマンフィルタを使います。
+Every reading arrives one tick late. What does that do to a very high gain?	どの読み値も 1 tick 遅れて届きます。とても高いゲインにはどう影響するでしょう?
+Every robot, working at once, in the worst weather in ten years.	すべてのロボットが一斉に働く、十年で最悪の天気の日。
+Every test settles on target.	全テストでターゲットに収束。
+Every test tracks closely.	全テストでぴったり追従。
+Everyone, on storm day	嵐の日の島のみんな
+Evidence found	証拠を見つけた
+Evidence:	証拠：
+Exactly at the target.	ちょうどターゲットの位置。
+Exactly on the flag.	ちょうど旗の上。
+FAULT	故障
+FIRST 200	最初の 200 回
+Factory arms, animation rigs and VR avatars all solve IK many times a second.	工場のロボットアーム、アニメーションのリグ、VR アバターは、どれも 1 秒に何度も逆運動学を解いています。
+Fault	故障
+Filtering the accelerometer alone is not enough: smooth it enough to kill the shake and it lags behind.	加速度センサーにフィルタをかけるだけでは足りません。揺れが消えるほど平滑化すると、今度は遅れてしまいます。
+Find the first swing bigger than the one before. The angle gain is so high that every late correction overshoots.	前の揺れより大きい最初の揺れを見つけましょう。傾きのゲインが高すぎて、遅れた修正がいつも行き過ぎています。
+Finish the chapter before it first.	先に前の章を終えよう。
+First Steps	はじめの一歩
+First find the elbow bend from the distance alone. With two 1 m links: d² = 2 + 2·cos(elbow).	まず距離だけから肘の曲げ角を求めます。1 m のリンク 2 本なら d² = 2 + 2·cos(肘角)。
+First make it work on every test. Then make it smooth. The stars measure how close you came to how real engineers tune real machines.\nPIP is waiting on the first bench.	まずは全テストに通るようにし、それから滑らかにしましょう。星は、本物のエンジニアが本物の機械を調整するやり方にどれだけ近づけたかを表します。\nPIP が最初の作業台で待っていますよ。
+Fisherman	漁師
+Fixed — now show KIT why	直った——次は KIT に原因を示そう
+Forward kinematics turns angles into a place; inverse kinematics turns a place back into angles.	順運動学は角度を位置に変え、逆運動学は位置を角度に戻します。
+Forward, but slowly.	前に進むが、ゆっくり。
+Full force left or right makes the cart chatter and wastes energy. Push in proportion to the lean.	左右に全力で押すと台車がガタガタ震え、エネルギーも無駄になります。傾きに比例して押しましょう。
+Fullscreen	フルスクリーン
+GPS does not solve this indoors, and even outdoors it is only good to a few metres.	GPS は屋内では役に立たず、屋外でも精度は数メートル程度です。
+Gain margin	ゲイン余裕
+Gaits and rhythm	歩容とリズム
+Granny Su	スーばあちゃん
+Gravity, inertia, and not overshooting	重力、慣性、行き過ぎないこと
+Gymnasts on the high bar pump the same way, and many real robots switch modes like this: walk, then stand; cruise, then dock.	鉄棒の体操選手も同じように勢いをつけます。多くの実際のロボットもこうしてモードを切り替えます。歩いてから立つ、巡航してから停泊する。
+HOIST is a lift platform driven by a raw force, and gravity pulls it down all the time.\nThis spring-and-damper program gets close, then sags below the target. Heavier loads sag more.\nMake it hold the exact height, whatever it carries.	HOIST は生の力で動くリフト台で、重力が常に下へ引っ張っています。\nこのばね＋ダンパーのプログラムはターゲットに近づきますが、その下で垂れ下がってしまいます。荷物が重いほど大きく垂れます。\n何を載せても、ぴったりその高さを保つようにしてください。
+Harbour master	港長
+Here `vel` is measured perfectly; real speed is usually estimated and noisy.	ここでは `vel` が完璧に計測されています。実際の速度はたいてい推定値で、ノイズも乗っています。
+Here the delay is exactly one tick. Real delays jitter from tick to tick, which eats into the margin further.	ここでの遅れはちょうど 1 tick です。実際の遅れは tick ごとにばらつき、余裕をさらに削ります。
+Here the switch is one hard threshold. Real systems blend the hand-over and guard against flicking back and forth between modes.	ここでの切り替えは一本の固いしきい値です。実際のシステムは引き継ぎをなめらかにし、モードの間を行ったり来たりしないよう対策します。
+Here the wheel speed follows the command with one smooth lag; real motors also slip and heat up.	ここでは車輪の速度が指令に滑らかに遅れて追従するだけです。実際のモーターは滑ったり発熱したりもします。
+Hints	ヒント
+How far past the target it went, worst test case.	ターゲットを越えた距離（最悪のテストケース）。
+Huge spikes: the derivative amplifies the noise.	巨大なスパイク。微分がノイズを増幅する。
+IF THIS > 0	これが > 0 なら
+IMU · TILT	IMU · 傾き
+INPUT	入力
+INSIGHT CARD	インサイトカード
+INTEG d, x — x added up over time. Remembers.	INTEG d, x — x の時間積算。記憶あり。
+In step with the swing, like pushing a child on a swing.	揺れのリズムに合わせて。ブランコの子どもを押すように。
+Instead of full speed or nothing, make the speed depend on how far is left.	全速か停止かではなく、残りの距離に応じて速度を変えましょう。
+Integrating keeps the shape but also integrates the bias, so the error grows forever. That is why the accelerometer is still needed.	積分すると形は保てますが、バイアスも一緒に積分されるので、誤差は際限なく増えていきます。だからこそ加速度センサーが今も必要なのです。
+Into the workshop	工房へ
+Inverse kinematics	逆運動学
+It arrives docked in every test.	どのテストでも、ゴールにぴたりと着いた。
+It averages out to nothing.	平均するとほぼゼロ。
+It bounces off the wall and comes back.	壁に当たって跳ね返ってくる。
+It falls over.	倒れる。
+It finishes every test.	全テストでゴールに到達。
+It goes straight, just faster.	まっすぐ進む。速くなるだけ。
+It grows faster and faster until the pole falls.	どんどん速く大きくなり、棒が倒れる。
+It should stay upright while the cart drives left.	まっすぐのまま、台車が左へ走る。
+It slows down smoothly and stops at the mark.	滑らかに減速して、マークで止まる。
+It stays at 0.1.	0.1 のまま。
+It stays up in every test.	全テストで倒れずに耐えた。
+It stops short and never arrives.	手前で止まり、たどり着けない。
+It swings back to upright, like a pendulum.	振り子のように、まっすぐに戻る。
+It works.	動いた。
+Joints and space	関節と空間
+Jump to the verdict	結果へスキップ
+KIT has a hint	KIT からヒント
+KIT · Every robot can move now. Go back and chase the stars you missed.	KIT · これで全部のロボットが動けるようになりました。戻って、取り逃した星を集めに行きましょう。
+KIT · WORKSHOP ASSISTANT	KIT · 工房アシスタント
+KIT'S WORKSHOP	KIT の工房
+Keeping unstable things up	不安定なものを立たせておく
+LAST 200	最後の 200 回
+LIMIT	上限
+LOCKED	未解放
+LPF d, x, k — smooth x: move k of the way towards it each tick. Remembers.	LPF d, x, k — x を平滑化。毎ティック、x に向かって k の割合だけ近づく。記憶あり。
+Language	言語
+Learn to Dock	ドッキングを学ぶ
+Learns to dock quickly.	すぐにドッキングを覚える。
+Left, to pull it back.	左。引き戻すため。
+Left, towards home: the cart steps right for a moment to tip it.	左、中央の方へ。台車が一瞬右へ動いて棒を傾ける。
+Left.	左。
+Less gap means less speed, so it brakes all the way in. That is proportional control: the correction shrinks as the error does.	距離が縮むほど速度も落ちるので、最後までブレーキをかけながら進みます。これが比例制御です。誤差が小さくなるほど、修正も小さくなります。
+Lift Off	リフトオフ
+Lift the leg that is swinging forward. The cosine of the same phase tells you which one that is.	前に振っている脚を上げましょう。どちらの脚かは、同じ位相のコサインが教えてくれます。
+Lighthouse keeper	灯台守
+Like balancing a broom on your hand: you move your hand towards the lean, so the base gets back under the weight.	手のひらでほうきを立てるのと同じです。傾いた方向へ手を動かせば、土台が重心の下に戻ります。
+Line	行
+Line Follower	ライントレーサー
+Localization	自己位置推定
+Look at the learning curve: with a sparse reward it stays flat. Give a little reward for getting closer.	学習曲線を見てください。疎な報酬では平らなままです。近づいたら少しだけ報酬を与えましょう。
+Looser tolerances; mechanism hints open at once.	許容範囲がゆるくなり、仕組みのヒントがすぐに見られます。
+MAX d, a, b — the larger one.	MAX d, a, b — 大きいほう。
+MIN d, a, b — the smaller one.	MIN d, a, b — 小さいほう。
+MOV d, a — copy a into d.	MOV d, a — a を d にコピー。
+Mind the Wall	壁に注意
+More `DERIV` only amplifies the noise. Bring the angle gain down to about 40, and take the fall rate from `gyro` instead of differentiating a noisy angle.	`DERIV` を増やしてもノイズが大きくなるだけです。傾きのゲインを 40 くらいまで下げ、落下速度はノイズの多い角度を微分せず `gyro` から取りましょう。
+More gain is not always better: too much I makes the platform overshoot and wobble.	ゲインは大きければよいわけではありません。I が強すぎると、台がオーバーシュートしてふらつきます。
+Move the target	目標を動かす
+Move the target with ← →. Your program reads the new target every tick and drives there on its own.	← → で目標を動かそう。プログラムは毎ティック新しい目標を読み、自分でそこへ向かう。
+Move the target with ↑ ↓. Your program reads the new target every tick and drives there on its own.	↑ ↓ で目標を動かそう。プログラムは毎ティック新しい目標を読み、自分でそこへ向かう。
+Must run	合格条件
+Mute	ミュート
+NOW OPEN	新たに開放
+Next	次へ
+Next on the bench:	次の作業台：
+Next robot ›	次のロボット ›
+No hints. Passing needs what used to earn ★2.	ヒントなし。以前の ★2 の基準でようやく合格です。
+Not quite — and that is what the bench is for.	惜しい — それを確かめるための作業台です。
+Not run yet — press Run to test every case.	まだ実行していません — 「実行」を押して全ケースをテストしましょう。
+Not that moment	その瞬間じゃない
+Nothing changes: the gains do not care how far it is.	何も変わらない。ゲインは距離を気にしない。
+Nothing much: one tick is only 20 ms.	ほとんど影響なし。1 tick はたった 20 ms。
+Notifications	通知
+Nowhere: it rocks back and forth on the spot.	どこにも行かない。その場で前後に揺れるだけ。
+Nudge the arm's target with the arrow keys. Your program sees the new target and follows it.	矢印キーでアームの目標を少しずらそう。プログラムは新しい目標を見て追従する。
+ON A REAL ROBOT	実機では
+Off	オフ
+Old Zhou	周じいさん
+On	オン
+One control tick (20 ms). Period key	1 制御ティック（20 ms）進める。ピリオドキー
+One loop doing three jobs at once: stay up, follow the goal, shrug off shoves. Each job borrows from the others.	一つのループが三つの仕事を同時にこなします。立ち続ける、目標を追う、押されても耐える。どの仕事も、ほかの仕事から力を借りています。
+Only at the bottom, when the pole is fastest.	一番下、棒が最も速いときだけ。
+Open the Hints tab when you want it.	必要になったら「ヒント」タブを開いてください。
+Open the workshop	工房を開ける
+Opens after {} more failed run(s), or in {} s ({} runs / {} s).	あと {} 回失敗するか、{} 秒後に解放（{} 回 / {} 秒）。
+Overshoot is not caused by going too fast, but by braking too late.	オーバーシュートの原因は速すぎることではなく、ブレーキが遅すぎることです。
+P reacts to the error now, I to the error so far, D to where the error is heading.	P は今の誤差に、I はこれまでの誤差に、D は誤差がこれから向かう先に反応します。
+PID	PID制御
+PID d, e, kp, ki, kd — kp·e + ki·∫e + kd·de/dt. Remembers.	PID d, e, kp, ki, kd — kp·e + ki·∫e + kd·de/dt。記憶あり。
+PID loops run in drones, thermostats, cruise control and most of the world's industrial machines.	ドローン、サーモスタット、クルーズコントロール、そして世界中の産業機械のほとんどで PID ループが動いています。
+PIP has one wheel motor and one sensor: where it is.\nDrive it to the yellow flag and stop there.\nThe flag moves between tests, so read `target` instead of guessing.	PIP には車輪モーターが 1 つと、センサーが 1 つだけあります。自分の位置です。\n黄色い旗まで走らせて、そこで止めてください。\n旗の位置はテストごとに変わるので、当て推量ではなく `target` を読みましょう。
+PIP now has a range finder instead of a map: `dist` is the gap to the wall ahead.\nThis program is supposed to park 10 cm from the wall. It hits the wall instead.\nFind out why, and fix it.	PIP は今度は地図の代わりに距離センサーを持っています。`dist` は前方の壁までの距離です。\nこのプログラムは壁から 10 cm の位置に止まるはずが、壁にぶつかってしまいます。\n原因を突き止めて、直してください。
+POLE gets there sooner.	POLE が早く着く。
+POLE is a cart with a free-swinging pole standing on top. Gravity wants it down.\nKeep the pole up for 10 seconds by moving the cart under it. Someone will shove it.\n`angle` is the lean, `gyro` how fast it is falling.	POLE は、自由に揺れる棒を上に立てた台車です。重力は棒を倒そうとします。\n棒の下へ台車を動かして、10 秒間立たせ続けてください。途中で誰かが押してきます。\n`angle` は傾き、`gyro` は倒れる速さです。
+POLE is upright, 0.5 m right of centre. To bring it home, which way should the pole lean first?	POLE はまっすぐ立って、中央から 0.5 m 右にいます。中央へ戻すには、棒はまずどちらへ傾くべきでしょう?
+POLE leans 0.1 rad and the motor is off. What happens to the lean?	POLE が 0.1 rad 傾いていて、モーターは止まっています。傾きはどうなるでしょう?
+POLE lunges with a big lean, and a shove on top of that can tip it or run it off the track.	POLE が大きく傾いて飛びかかり、そこへ押されると倒れるかレールから外れる。
+POLE stays up now, and wanders off while it does. The clinic corridor is narrow: here the track ends 1 m either side of centre.\nKeep the pole up for 10 seconds without leaving the track. Someone will shove it, and the sensors are a little noisy.\nYou cannot just drive the cart home: that tips the pole. Ask the pole to lean towards home, and let the balance loop carry the cart there.	POLE は立てるようになりましたが、立ちながらふらふら離れていきます。診療所の廊下は狭く、ここではレールが中央から左右 1 m で終わります。\nレールから外れずに、棒を 10 秒間立たせてください。誰かが押してきますし、センサーにも少しノイズがあります。\n台車をそのまま中央へ走らせることはできません。棒が倒れます。棒に中央の方へ傾いてもらい、バランスのループに台車を運ばせましょう。
+POLE's sensors are perfect, its motor instant and its track long. The rest of this chapter takes those away one by one.	ここでの POLE はセンサーが完璧で、モーターは即座に反応し、レールも長めです。この章の残りで、それらを一つずつ取り上げていきます。
+PREDICT · BEFORE YOU BUILD	予想 · 作る前に
+PROGRAM · ROWS	プログラム · 行数
+PUZZLE	パズル
+Parking sensors, lift doors and robot vacuums all slow down as they close the gap.	駐車センサーもエレベーターのドアもロボット掃除機も、距離が縮まるにつれて減速します。
+Pause	一時停止
+Pick a block above to add it. Click a row to select it, a chip to change it.\nEvery tick the rows run top to bottom; registers r0–r7 keep their value until written.\nDigits type a number · Alt+↑/↓ moves a row · Delete removes it.	上のブロックを選ぶと追加されます。行をクリックで選択、チップをクリックで変更できます。\n毎ティック、行は上から下へ実行されます。レジスタ r0–r7 は書き換えられるまで値を保持します。\n数字キーで数値入力 · Alt+↑/↓ で行を移動 · Delete で削除。
+Pick up to four signals on the left.	左から最大 4 つの信号を選ぼう。
+Play	再生
+Playback speed (×1 is real time)	再生速度（×1 で実時間）
+Point at the evidence first	先に証拠を指そう
+Postal courier	郵便配達
+Power's on. Hello!\nI am KIT, the workshop assistant. Every robot on these benches has motors and sensors, and not one of them knows how to use them.	電源オン。こんにちは！\nぼくは KIT、この工房のアシスタントです。作業台のロボットはみんなモーターとセンサーを持っているのに、使い方を知っている子は一台もいないんです。
+Predict the new tilt from `est + gyro·dt`, then nudge it a few percent towards `accel`.	`est + gyro·dt` で新しい傾きを予測し、そこから数パーセントだけ `accel` に寄せましょう。
+Press Run: every signal is recorded, 50 times a second.	「実行」を押そう：すべての信号が毎秒 50 回記録される。
+Proportional control	比例制御
+Pump = clamp(6·gyro·cos(angle)·E − 2·pos − 2·vel, 5). Balance = 40·angle + 8·gyro + 1·pos + 2·vel. Use the balancer when |angle| < 0.5.	振り上げ = clamp(6·gyro·cos(angle)·E − 2·pos − 2·vel, 5)。バランス = 40·angle + 8·gyro + 1·pos + 2·vel。|angle| < 0.5 のときはバランサーを使います。
+Pump in proportion to `gyro`·cos(`angle`), clamped to a few newtons, and stop pumping once there is enough energy: E = 0.034·gyro² + cos(angle) − 1 is zero at the top. Keep the cart near the middle while you pump.	`gyro`·cos(`angle`) に比例して押し、数ニュートンに制限します。エネルギーが十分になったらこぐのをやめます。E = 0.034·gyro² + cos(angle) − 1 は頂上でゼロです。こいでいる間、台車は中央近くに保ちましょう。
+Punish the distance to the target every tick, and keep `dock` as the prize. Careful: rewarding speed or position alone teaches the wrong thing.	毎ティック、ターゲットまでの距離に応じて減点し、`dock` はご褒美として残しておきましょう。注意：速度や位置だけに報酬を与えると、間違ったことを教えてしまいます。
+Push	押す
+Push in proportion to the error, and the push fades out exactly as you arrive.	誤差に比例して押せば、到着した瞬間にちょうど押す力が消えます。
+Pushing against the lean feels like correcting it. It moves the cart out from under the weight and the pole tips faster.	傾きに逆らって押すと、直しているように感じます。実際は台車を重心の下から外してしまい、棒はもっと速く倒れます。
+Put the starter program back. Undo brings yours back.	初期プログラムに戻します。「元に戻す」で取り消せます。
+Puzzle	パズル
+Quit	終了
+RMS of the error after the first second, worst test case.	最初の 1 秒以降の誤差の RMS（最悪のテストケース）。
+ROBOT TUNED	調整完了
+ROVER has two wheels and a camera that sees the line underneath.\n`offset` is how far it sits left of the line, `heading` how far it points away from it.\nSteer by driving the wheels at different speeds, and reach the end of the track.	ROVER には車輪が 2 つと、真下のラインを見るカメラがあります。\n`offset` はラインからどれだけ左にずれているか、`heading` はラインからどれだけ向きがずれているかです。\n左右の車輪の速度を変えて曲がり、コースの終点までたどり着いてください。
+ROW	行
+Random driving rarely stops exactly on the dock, so every attempt scores the same zero. Without a hint of 'warmer', there is nothing to learn.	でたらめに走ってもドックにぴったり止まることはまずないので、どの試行も同じ 0 点です。「近づいている」という手がかりがなければ、学べることは何もありません。
+Reach	リーチ
+Reading a sensor every tick and deciding again is what makes a robot a robot.	毎ティックセンサーを読み、そのたびに判断し直す。それがロボットをロボットたらしめるものです。
+Real cascades run the inner loop many times faster than the outer one; here both run every tick.	実際のカスケード制御では、内側のループを外側より何倍も速く回します。ここでは両方とも毎 tick 動きます。
+Real hardware also has backlash, cable drag, battery sag and wear. Four robots are a very small sample.	実際のハードウェアには、バックラッシュ、ケーブルの引っかかり、バッテリーの電圧降下、摩耗もあります。4 台のロボットではサンプルとしてごく小さいのです。
+Real motor controllers run this loop hundreds to thousands of times a second.	実際のモーターコントローラーは、このループを 1 秒に数百回から数千回回しています。
+Reality gives no retries	現実にやり直しはない
+Reduce motion	モーションを減らす
+Reinforcement learning taught robots to walk, grasp and fly drones; designing the reward is often the hardest part.	強化学習はロボットに歩行や把持、ドローンの操縦を教えてきました。報酬の設計こそが、たいてい一番の難所です。
+Replace `DERIV r1, angle / MUL r1, r1, 8` with `MUL r1, gyro, 10`.	`DERIV r1, angle / MUL r1, r1, 8` を `MUL r1, gyro, 10` に置き換えましょう。
+Replay	リプレイ
+Replaying test	テストを再生中
+Requires	解放条件：
+Reset	リセット
+Reset  R	リセット  R
+Restore the starter	初期プログラムに戻す
+Restore the starter, run it, and point at:	初期プログラムに戻して実行し、スコープ上で指そう：
+Results ›	結果 ›
+Reward shaping	報酬設計
+Rewind	巻き戻し
+Right, away from home.	右、中央から離れる方へ。
+Right, to get back under it.	右。棒の下に戻るため。
+Right.	正解。
+Robot unlocked	新しいロボットが解放
+Robot vacuums and self-driving cars combine wheel odometry with landmarks seen by cameras or lidar; building the map at the same time is SLAM.	ロボット掃除機や自動運転車は、車輪オドメトリとカメラや LiDAR で見たランドマークを組み合わせています。同時に地図も作るのが SLAM です。
+Robots do not follow a script of timed moves; they react to what they measure.	ロボットは時間割どおりの動作台本に従うのではなく、測ったものに反応します。
+Robots taught	教えたロボット
+Rows in the program.	プログラムの行数。
+Run	実行
+SCOUT already knows where every beacon is and never mistakes one for another.	SCOUT はすべてのビーコンの位置を最初から知っていて、ビーコンを取り違えることもありません。
+SCOUT drives down a long corridor and must keep track of where it is in `est`.\nThe wheel counter `odom` is a little off: the wheels are not quite the size it thinks.\nNow and then a beacon comes into view: `fix` is 1, `beacon` is its known position and `dist` how far ahead it is.	SCOUT は長い廊下を進みながら、自分の位置を `est` で把握し続けなければなりません。\n車輪カウンター `odom` は少しずれています。車輪の大きさが、本人が思っているのとちょっと違うのです。\nときどきビーコンが見えます。そのとき `fix` は 1 になり、`beacon` はその既知の位置、`dist` は前方どれだけ先にあるかを示します。
+SEL d, c, a, b — a if c > 0, otherwise b.	SEL d, c, a, b — c > 0 なら a、そうでなければ b。
+SHOWCASE · LIVE	ショーケース · ライブ
+SIDE VIEW	側面図
+SIGNALS	信号
+SIN d, a — sine (radians).	SIN d, a — サイン（ラジアン）。
+SLED glides on ice: a force changes its speed, and it keeps sliding when the force stops.\nPark it on the mark. Overshooting by more than 15 cm fails the run.\nYou can read `vel` as well as `pos`.	SLED は氷の上を滑ります。力は速度を変えるだけで、力を止めても滑り続けます。\nマークの上に止めてください。15 cm を超えて行き過ぎると失敗です。\n`pos` に加えて `vel` も読めます。
+SMOOTHING k (0–1)	平滑化 k（0–1）
+SQRT d, a — square root.	SQRT d, a — 平方根。
+STARS	星
+STRIDER cannot tip over sideways or stumble; it only falls if both feet stay in the air.	STRIDER は横に倒れることもつまずくこともありません。倒れるのは両足が浮いたままのときだけです。
+STRIDER has two legs, a hip motor on each and a foot it can lift.\nA planted foot pushes the body forward as the hip swings back. Walk to the flag.\nIf both feet leave the ground for long, it falls.	STRIDER には脚が二本あり、それぞれに股関節モーターと持ち上げられる足がある。\n接地した足は、股関節が後ろへ振れると体を前へ押し出す。旗まで歩こう。\n両足が長く地面を離れると、倒れる。
+SUB r0, dist, 0.1 / MUL motor, r0, 2 — speed proportional to the gap.	SUB r0, dist, 0.1 / MUL motor, r0, 2 — 残りの距離に比例した速度。
+SUB r0, target, pos / PID motor, r0, 40, 20, 10 — P lifts, I learns the weight, D damps.	SUB r0, target, pos / PID motor, r0, 40, 20, 10 — P が持ち上げ、I が重さを覚え、D が減衰させる。
+SUB r0, target, pos / SUB r0, r0, 0.2 / SEL motor, r0, 1.5, 0 — stop 0.2 m early and let it coast in.	SUB r0, target, pos / SUB r0, r0, 0.2 / SEL motor, r0, 1.5, 0 — 0.2 m 手前で止め、惰性で滑り込ませる。
+Same speed on both wheels goes straight. Add something to one side and subtract it from the other to turn.	両輪が同じ速さならまっすぐ進みます。片側に足して反対側から引けば曲がります。
+Schoolteacher	小学校の先生
+Scope	スコープ
+Seconds until it settles (or finishes), worst test case.	収束する（またはゴールする）までの秒数（最悪のテストケース）。
+Self-balancing scooters, rockets on ascent and walking robots all solve an inverted pendulum.	セルフバランススクーターも、上昇中のロケットも、歩行ロボットも、みな倒立振子の問題を解いています。
+Sensor fusion	センサーフュージョン
+Sensors in, motors out	センサーが入り、モーターが出る
+Sensors lie	センサーは嘘をつく
+Settings	設定
+Shaky, like the accelerometer.	加速度センサーと同じようにぶれる。
+Show the walkthrough	解答例を表示
+Show this hint	このヒントを表示
+Showcase ▶	ショーケース ▶
+Sim to Real	シムから実機へ
+Skip	スキップ
+Slides in and stops.	滑り込んで止まる。
+Smooth and correct.	滑らかで正確。
+Smooth, but drifting further and further away.	滑らかだが、真値からどんどん離れていく。
+Soft Landing	ソフトランディング
+Solved with the walkthrough: at most ★★ here.	解答を見て解いた：ここでは最大 ★★。
+Some systems fall over unless you keep acting; control turns an unstable thing into a stable one.	動作を続けないと倒れてしまうシステムもあります。制御は不安定なものを安定なものに変えるのです。
+Space	スペース
+Stars	星
+Start from the four gains, but measure position from the bed: use `pos − target` instead of `pos`.	四つのゲインから始めますが、位置はベッドから測ります。`pos` の代わりに `pos − target` を使いましょう。
+Stay on the Rail	レールから出るな
+Stay still and wait.	じっとして待つ。
+Steady Gaze	ぶれない視線
+Step	ステップ
+Stopping at the line is not enough: anything that moves needs distance to brake.	ラインに着いてから止まるのでは足りません。動くものには必ず制動距離が必要です。
+Stops before reaching it.	届く前に止まる。
+Storm Day	嵐の日
+Story	ストーリー
+Swing Up	振り上げ
+Swing up, then switch	振り上げてから切り替える
+Swings past the mark, back, and past again.	マークを越え、戻り、また越える。
+TAUGHT	習得済み
+TEST	テスト
+TEST STANDARDS	テスト基準
+THEN	なら
+THIS RUN · WORST TEST	今回の実行 · 最悪のテスト
+TOP VIEW	上面図
+TRAINING · SHARE OF EPISODES THAT DOCKED (MOVING AVERAGE)	トレーニング · ドッキングできたエピソードの割合（移動平均）
+Teams train robots on thousands of randomised simulators, with different masses, delays and noise, so the real one is just another variation.	開発チームは、質量・遅延・ノイズがそれぞれ異なる何千ものランダム化されたシミュレーターでロボットを訓練します。そうすれば、実機もただのバリエーションのひとつになるのです。
+Test	テスト
+The Clinic	診療所
+The Fog Harbour	霧の港
+The Lighthouse	灯台
+The Post Office	郵便局
+The Reef	岩礁
+The School	小学校
+The Shivers	震え
+The Tray	薬のトレイ
+The Workshop	工房
+The arm cannot point there at all.	腕はそこを向くことすらできない。
+The balance controller works perfectly in simulation. Now it goes onto four real robots.\nTheir motors lag and have a dead zone, their sensors are noisy and biased, and no two weigh the same.\nIt falls off the track on real hardware. Make one program that keeps all four up.	バランスコントローラーはシミュレーションでは完璧に動きます。今度はそれを 4 台の実機ロボットに載せます。\nモーターには遅れと不感帯があり、センサーにはノイズとバイアスがあり、重さも一台ずつ違います。\n実機ではレールから落ちてしまいます。4 台すべてを立たせ続ける、ひとつのプログラムを作ってください。
+The balancer fights the hanging pole and gets nowhere. Near the top it is the right tool; far from it you need another. `SEL` can switch between them on |angle|.	バランサーはぶら下がった棒と格闘するだけで、何も進みません。頂上の近くでは正しい道具ですが、遠いときは別の道具が要ります。`SEL` で |angle| に応じて切り替えられます。
+The beacon is ahead of you by `dist`, so you are at `beacon - dist`. Use `SEL` to choose between that and dead reckoning.	ビーコンは `dist` だけ前方にあるので、自分の位置は `beacon - dist` です。`SEL` を使って、それとデッドレコニングのどちらを使うか選びましょう。
+The bias here is constant; real gyro bias wanders with temperature.	ここではバイアスは一定ですが、実際のジャイロのバイアスは温度によって変動します。
+The cart overcorrects on old news, and each swing comes back bigger.	台車が古い情報で直しすぎ、揺れが戻るたびに大きくなる。
+The corridor is a straight line and the shoves are short kicks. Real corridors have turns, slopes and people who lean on the tray.	ここの廊下は一直線で、押されるのも短い一撃だけです。実際の廊下には曲がり角も坂もあり、トレイに寄りかかる人もいます。
+The faster wheel travels further, so the rover swings around the slower one: it turns right. Tanks and wheelchairs steer the same way.	速い車輪のほうが長い距離を進むので、ローバーは遅い車輪を軸に回ります。つまり右に曲がります。戦車や車椅子も同じ方法で曲がります。
+The fingertip goes past the target, in line with it.	指先がターゲットと一直線上で、その先まで行ってしまう。
+The fingertip lands on the target.	指先がターゲットにぴたりと届く。
+The intended experience.	想定どおりの体験。
+The left wheel spins faster than the right. Which way does the rover turn?	左の車輪が右より速く回っています。ローバーはどちらに曲がるでしょう？
+The lighthouse lift never stops level with a floor.	灯台のエレベーターがいつも階の高さで止まらない。
+The motor command is proportional to the gap: `motor = 2 × gap`. What happens as the cart gets close?	モーター指令は残りの距離に比例しています：`motor = 2 × gap`。台車が近づくとどうなるでしょう？
+The next bed is 1.2 m away. What happens if the controller chases the whole distance at once?	次のベッドは 1.2 m 先です。コントローラーが距離全体を一気に追うとどうなるでしょう?
+The odometer reads 10% high. After driving 10 m with no beacons, how wrong is the estimate?	オドメーターの値が 10% 大きく出ます。ビーコンなしで 10 m 走ったあと、推定値はどれだけずれているでしょう？
+The pier cart has to stop on its mark, not in the sea.	桟橋の台車は印の上で止まらないと、海に落ちる。
+The pole leans right. Which way should the cart move to catch it?	棒が右に傾いています。受け止めるには、台車をどちらに動かせばよいでしょう？
+The program you wrote is not driving: it only says what is good. The learner tries actions, keeps what your reward pays for, and the test runs use what it kept. If the curve stays low, the reward is not pointing it towards the dock.	あなたが書いたプログラムは運転しません。何が良いかを伝えるだけです。学習器はいろいろな行動を試し、あなたの報酬が評価したものを残し、テストではその残したものを使います。曲線が低いままなら、報酬がドックへ導いていないということです。
+The range finder here is perfect; real ones are noisy and miss dark or shiny walls.	ここの距離センサーは完璧です。実際のものはノイズがあり、暗い壁や光沢のある壁を見逃します。
+The reality gap	リアリティギャップ
+The reward is 1 only when docked and 0 otherwise. What does the learner do?	報酬はドッキングしたときだけ 1、それ以外は 0 です。学習器はどうするでしょう？
+The robot does not understand the goal. Give it a loophole and it will find it.	ロボットは目的を理解していません。抜け穴があれば、必ず見つけ出します。
+The robot reacts later, but more steadily.	ロボットの反応は遅れるが、より安定する。
+The same small noise, a little delayed.	同じ小さなノイズが、少し遅れて出る。
+The scope shows the sled oscillating. You need a force that opposes speed, like a shock absorber.	スコープを見ると、ソリが振動しています。ショックアブソーバーのように、速度に逆らう力が必要です。
+The sensors are perfect and the motor responds instantly. The Field will take that away.	ここではセンサーは完璧で、モーターも即座に反応します。試験場ではそれが失われます。
+The starter adds up `odom × dt` and drifts. When `fix` is 1 you know exactly where you are.	初期プログラムは `odom × dt` を足し合わせているので、ドリフトします。`fix` が 1 のときは、自分の位置が正確にわかります。
+The starter pushes against the lean, and the lean grows faster. Flip the sign: drive the cart towards the side the pole leans.	最初のプログラムは傾きに逆らって押しているので、傾きがもっと速く大きくなります。符号を反転して、棒が傾いている側へ台車を走らせましょう。
+The target is 1.5 m away. You point the shoulder straight at it and keep the elbow straight. What happens?	ターゲットは 1.5 m 先です。肩をまっすぐターゲットに向け、肘は伸ばしたままにします。どうなるでしょう？
+The weight here never changes mid-run and the motor never overheats.	ここでは途中で荷重が変わることも、モーターが過熱することもありません。
+The whole island	島じゅう
+Then aim the shoulder at the target and subtract the angle the bend adds: atan2(sin e, 1 + cos e).	次に肩をターゲットに向け、曲げによって生じる角度を差し引きます：atan2(sin e, 1 + cos e)。
+There is a sensor that measures the fall rate directly. Use it instead of differentiating the angle.	倒れる速さを直接測るセンサーがあります。角度を微分する代わりに、そちらを使いましょう。
+There is usually more than one answer: this arm can reach most points elbow-up or elbow-down.	答えはたいていひとつではありません。この腕は、ほとんどの点に肘を上にしても下にしても届きます。
+These wheels never slip and the camera sees the line perfectly; real rovers deal with dust and glare.	ここの車輪は決して滑らず、カメラもラインを完璧に捉えます。実際のローバーはほこりやまぶしさと戦っています。
+Things with inertia need two forces: one that pulls towards the goal, one that resists speed.	慣性のあるものには 2 つの力が必要です。目標へ引き寄せる力と、速度に逆らう力です。
+This is the moment	ここだ
+This learner sees a 63-cell table and five wheel speeds; real ones use neural networks and millions of trials.	この学習器が見ているのは 63 マスの表と 5 段階の車輪速度だけです。実際の学習器はニューラルネットワークと何百万回もの試行を使います。
+This program cannot be shown as blocks.	このプログラムはブロックとして表示できません。
+This robot can now earn at most two stars.	このロボットで獲得できる星は最大 2 つになりました。
+This time you do not write the controller. A learner tries random wheel speeds, thousands of times, and keeps what pays.\nYou write `reward`: how good each moment is. `dock` is 1 while the cart rests on its charger.\nPress Run to train, then watch what it learned.	今回はコントローラーを書きません。学習器がでたらめな車輪速度を何千回も試し、得になるものを残していきます。\nあなたが書くのは `reward`、つまり各瞬間がどれだけ良いかです。台車が充電器の上にいる間、`dock` は 1 になります。\n「実行」を押して訓練し、何を覚えたか見てみましょう。
+Title	タイトル
+To move a balanced pole you must tilt it the way you want to go, and the cart then follows the lean. So the outer loop asks for a lean; the inner loop makes it happen.	立っている棒を動かすには、行きたい方へまず傾けます。台車はその傾きを追いかけます。だから外側のループが傾きを求め、内側のループがそれを実現します。
+To the bench	作業台へ
+Total motor effort spent, worst test case.	モーターが使った総エネルギー（最悪のテストケース）。
+Tracking under disturbance	外乱の中での追従
+Training	訓練
+Turn harder the further off the line you are. Looking at `heading` too stops the zig-zag.	ラインから離れるほど強く曲がりましょう。`heading` も見れば、ジグザグ走行が止まります。
+Turn position into a lean: add a little `pos` and `vel` to `angle` before the balance gain. Too much and the inner loop cannot keep up.	位置を傾きに変えましょう。バランスのゲインを掛ける前に、`angle` に `pos` と `vel` を少し足します。足しすぎると内側のループが追いつけません。
+Two bad sensors with different flaws can make one good estimate.	欠点の違うダメなセンサー 2 つから、ひとつの良い推定値が作れます。
+Two controllers, each good in its own region, and a rule for handing over: far from the goal, pump energy; near it, balance.	二つのコントローラーがそれぞれ自分の領域を受け持ち、引き継ぎのルールがあります。目標から遠ければエネルギーを注ぎ、近ければバランスを取る。
+Two fixed wheels are enough to go anywhere on a floor: speed is their average, turning is their difference.	固定された車輪が 2 つあれば、床の上ならどこへでも行けます。速度は両輪の平均、旋回は両輪の差です。
+Two joints in a plane have a formula; arms with six or seven joints need iterative solvers.	平面上の 2 関節なら公式で解けますが、6 関節や 7 関節の腕には反復ソルバーが必要です。
+Two wheels and a map	二つの車輪と一枚の地図
+Undo	元に戻す
+Unstable balance	不安定な釣り合い
+Upside down, gravity pulls harder the further the pole leans, so a small lean grows on its own. Doing nothing is never safe.	逆立ちの状態では、棒が傾くほど重力が強く引くので、小さな傾きは勝手に大きくなります。何もしないのは決して安全ではありません。
+Volume	音量
+WALKTHROUGH · CAPS AT ★★	解答例 · 最大 ★★
+WHAT THE SIMULATOR SIMPLIFIES	シミュレーターが省いていること
+WHERE TO LOOK	見るべきところ
+WHICH MECHANISM	どの仕組みか
+WHY IT HAPPENS	なぜ起きるのか
+WRITES TO	書き込み先
+Wake Up	目覚め
+Walking is not planned step by step from scratch; most of it is a repeating pattern, adjusted on the fly.	歩行は一歩ごとにゼロから計画されるわけではありません。ほとんどは繰り返しのパターンで、その場で調整されています。
+Walking is rhythmic falling	歩くとはリズミカルに倒れること
+Walkthrough opened	解答例を表示しました
+Wanders aimlessly: it almost never finds the reward to learn from.	あてもなくうろつく。報酬にほとんど出会えず、学ぶ材料がない。
+Warehouse robots follow lines and floor codes this way, carrying shelves around all day.	倉庫ロボットはこうして床のラインやコードをたどり、一日中棚を運んでいます。
+Watch `pos` on the scope: the pole stays up, but the cart drifts until it runs off the end of the track.	スコープで `pos` を見てください。棒は立っていますが、台車は流れていき、やがてレールの端から飛び出します。
+Watch the error on the scope: it settles, but not at zero. Something has to supply the force for the weight.	スコープで誤差を見てください。落ち着きはしますが、ゼロにはなりません。重さを支える力を、何かが別に供給する必要があります。
+Watch the scope: the motor drops to 0 at 10 cm, but the cart is still moving fast. It needs room to stop.	スコープを見てください。モーターは 10 cm の地点でようやく 0 になりますが、台車はまだ速く動いています。止まるための余裕が必要です。
+When a controller shakes, the reflex is to add damping. With noisy, late sensors a bigger D just amplifies the noise.	コントローラーが震えると、つい減衰を足したくなります。でもセンサーがノイズだらけで遅いときは、D を大きくしてもノイズが増幅されるだけです。
+Where Am I?	ここはどこ？
+Works, but over the limit:	動作するが、上限超過：
+Workshop	工房
+Write a reward and press Run. The robot then practises on its own, episode after episode, and drives with what it learned. This chart shows how often practice ended docked.	報酬を書いて「実行」を押しましょう。ロボットはエピソードを重ねて自分で練習し、覚えたことを使って走ります。このグラフは、練習のうちドッキングで終わった割合を示しています。
+Xiaoman	シャオマン
+You cannot push an unstable thing back up; you have to get underneath it, and keep getting underneath it.	不安定なものを押し戻すことはできません。その下に入り込み、入り込み続けるしかないのです。
+You estimate the tilt only by adding up `gyro × dt`. After a minute, what does the estimate look like?	`gyro × dt` を足し合わせるだけで傾きを推定します。1 分後、推定値はどうなっているでしょう？
+You predicted this before.	この問題は以前に予想済みです。
+You switch the motor off exactly when the cart reaches the flag. Where does it stop?	台車がちょうど旗に着いた瞬間にモーターを切ります。どこで止まるでしょう？
+You take the derivative of a slightly noisy angle sensor to get the fall rate. What does the result look like?	少しノイズのある角度センサーを微分して、倒れる速さを求めます。結果はどうなるでしょう？
+You want the pole to swing a little higher each time. When should the cart push?	棒を毎回少しずつ高く振りたいとします。台車はいつ押すべきでしょう?
+You write that program in PATCH, one row at a time. Before you build, I will ask you to predict what happens. Then run it and watch the scope: every signal, every tick.	そのプログラムを PATCH で一行ずつ書いていきます。作る前に、何が起きるか予想してもらいますね。それから実行して、スコープを見てください。すべての信号を、毎ティックごとに。
+Your controller drives the robot live — and you get to shove it.	あなたの制御器がロボットをリアルタイムで動かす — そして押してみられる。
+Your controller is in charge now. Shove the robot with ← → and see whether it recovers. If it falls, it is set back up.	いまは制御器が主役。← → でロボットを押して、立て直せるか見てみよう。倒れたら起こし直される。
+Your earlier controller earned more stars — that record stays.	以前の制御器のほうが星が多い — その記録は残る。
+`SUB r0, target, pos` is the distance left. `SEL` picks its second value when the first is positive.	`SUB r0, target, pos` が残りの距離です。`SEL` は最初の値が正のとき 2 番目の値を選びます。
+beacon	ビーコン
+cannot read	読み取り不可
+cannot write to	書き込み不可
+commanded	指令姿勢
+did not get there in time	時間内に到達できなかった
+effort	エネルギー
+error	誤差
+error too large:	誤差が大きすぎる：
+evidence	証拠
+faded foot = lifted	薄い足 = 浮いている
+fell over	倒れた
+hit the ceiling	天井にぶつかった
+hit the wall	壁にぶつかった
+is not available on this bench.	はこの作業台では使えません。
+kd · DERIVATIVE	kd · 微分
+ki · INTEGRAL	ki · 積分
+kp · PROPORTIONAL	kp · 比例
+longest standing	最長直立
+lost the line	ラインを見失った
+motor	モーター
+needs	要件
+needs {} input(s), has {}	入力が {} 個必要ですが、{} 個です
+never came to rest on the target	ターゲットで静止しなかった
+on target	目標到達
+overshoot	オーバーシュート
+pushes	押した回数
+ran off the end of the track	コースの端から飛び出した
+rows	行数
+target	ターゲット
+the first divergent peak	最初に発散したピーク
+the first time the motor command hits its limit	モーター指令が初めて上限に当たった瞬間
+time	時間
+truth	真値
+unknown instruction	不明な命令
+wheel speed	車輪速度
+your est	あなたの est
+‹ Back to results	‹ 結果に戻る
+‹ Bench	‹ 作業台
+‹ Workshop	‹ 工房
+↑ Up	↑ 上へ
+↓ Down	↓ 下へ

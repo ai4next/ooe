@@ -1,0 +1,13 @@
+[package]
+name = "ooe_app"
+description = "Origin of Embodiment — teach a robot to move, from its first sensor to its first steps in the real world."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+bevy = { workspace = true }
+oo_base = { workspace = true }
+oo_kit = { workspace = true }
+ooe_core = { path = "../ooe_core" }

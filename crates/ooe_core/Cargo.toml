@@ -1,0 +1,12 @@
+[package]
+name = "ooe_core"
+description = "Deterministic simulation core for Origin of Embodiment: controller language, rigid-body rigs, sensors, grading, Q-learning and levels."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+oo_base = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
